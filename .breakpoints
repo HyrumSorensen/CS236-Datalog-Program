@@ -1,0 +1,40 @@
+{
+  "files": {
+    "Parser.h": [
+      {
+        "id": "d9178ce2-273d-417a-b2ec-7f14442c4e20",
+        "line": 107,
+        "version": 5898,
+        "index": 2243
+      },
+      {
+        "id": "54644f4b-2838-41dd-9209-a5e048317ab7",
+        "line": 111,
+        "version": 5898,
+        "index": 2373
+      },
+      {
+        "id": "76a7bd55-fc18-4f4b-872e-fa9f49ebea38",
+        "line": 126,
+        "version": 5898,
+        "index": 2739
+      }
+    ],
+    "RelationalDatabase.h": [
+      {
+        "id": "a98a1240-4290-4797-ab8f-de918062a90e",
+        "line": 181,
+        "version": 13522,
+        "index": 6008
+      }
+    ],
+    "Scanner.h": [
+      {
+        "id": "b8d6b596-7b7e-4226-a0c6-acf61607789f",
+        "line": 171,
+        "version": 642,
+        "index": 3969
+      }
+    ]
+  }
+}

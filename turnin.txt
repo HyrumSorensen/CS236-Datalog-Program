@@ -1,0 +1,1465 @@
+Bucket 20
+Running input 21
+Running input 22
+Running input 23
+Bucket 40
+Running input 41
+Running input 42
+Running input 43
+Running input 44
+Running input 45
+Running input 46
+Bucket 60
+Running input 61
+Running input 62
+6,8c6
+< SCC: R0,R1
+< a(x) :- b(x).
+<   x='2'
+---
+> SCC: R1
+10a9
+> SCC: R0
+11a11
+>   x='2'
+13c13,14
+< 2 passes: R0,R1
+---
+> a(x) :- b(x).
+> 2 passes: R0
+diff failed on test 62 \n
+Running input 64
+9,15c9,12
+< SCC: R0,R1,R2,R3,R4
+< a(x) :- b(x).
+<   x='2'
+< b(y) :- c(y).
+<   y='3'
+< c(z) :- d(z).
+<   z='4'
+---
+> SCC: R4
+> e(z) :- a(z).
+>   z='1'
+> SCC: R3
+16a14
+>   z='1'
+18c16,17
+< e(z) :- a(z).
+---
+> SCC: R2
+> c(z) :- d(z).
+20,22c19,21
+<   z='2'
+< a(x) :- b(x).
+<   x='3'
+---
+>   z='4'
+>   z='5'
+> SCC: R1
+23a23,24
+>   y='1'
+>   y='3'
+25,31c26,27
+< c(z) :- d(z).
+<   z='5'
+< d(z) :- e(z).
+<   z='1'
+<   z='2'
+< e(z) :- a(z).
+<   z='3'
+---
+>   y='5'
+> SCC: R0
+32a29,30
+>   x='2'
+>   x='3'
+34,37c32,33
+< b(y) :- c(y).
+<   y='5'
+< c(z) :- d(z).
+<   z='1'
+---
+>   x='5'
+> e(z) :- a(z).
+39d34
+< d(z) :- e(z).
+41d35
+< e(z) :- a(z).
+43,47d36
+< a(x) :- b(x).
+<   x='5'
+< b(y) :- c(y).
+<   y='1'
+< c(z) :- d(z).
+49,51c38,39
+< e(z) :- a(z).
+< a(x) :- b(x).
+< b(y) :- c(y).
+---
+>   z='2'
+>   z='3'
+53c41,43
+< d(z) :- e(z).
+---
+>   z='2'
+> b(y) :- c(y).
+> a(x) :- b(x).
+55c45,49
+< 5 passes: R0,R1,R2,R3,R4
+---
+> d(z) :- e(z).
+> c(z) :- d(z).
+> b(y) :- c(y).
+> a(x) :- b(x).
+> 3 passes: R0
+diff failed on test 64 \n
+Running input 66
+12c12
+< SCC: R1,R2
+---
+> SCC: R1
+15a16
+> SCC: R2
+26c27
+< 3 passes: R1,R2
+---
+> 3 passes: R2
+diff failed on test 66 \n
+Running input 67
+Running input 68
+20,21c20
+< a(X,Y) :- a(Y,X).
+< 2 passes: R0
+---
+> 1 passes: R0
+diff failed on test 68 \n
+Bucket 80
+Running input 81
+15c15,27
+< SCC: R7,R8,R9,R10
+---
+> SCC: R10
+> i(z) :- f(z).
+>   z='6'
+> SCC: R9
+> h(z) :- i(z).
+>   z='6'
+>   z='9'
+> SCC: R8
+> g(y) :- h(y).
+>   z='6'
+>   z='8'
+>   z='9'
+> SCC: R7
+18d29
+< g(y) :- h(y).
+20d30
+< h(z) :- i(z).
+23d32
+<   z='6'
+25d33
+< f(x) :- g(x).
+27,28d34
+< g(y) :- h(y).
+<   z='9'
+30d35
+<   z='6'
+32,35d36
+< i(z) :- f(z).
+<   z='8'
+< f(x) :- g(x).
+<   z='9'
+37,39d37
+<   z='6'
+< h(z) :- i(z).
+< i(z) :- f(z).
+41,42d38
+< g(y) :- h(y).
+< h(z) :- i(z).
+44c40,43
+< 4 passes: R7,R8,R9,R10
+---
+> h(z) :- i(z).
+> g(y) :- h(y).
+> f(x) :- g(x).
+> 3 passes: R7
+52,54c51,54
+< SCC: R3,R4,R5
+< c(x) :- d(x).
+<   z='4'
+---
+> SCC: R5
+> e(z) :- c(z).
+>   z='3'
+> SCC: R4
+55a56
+>   z='3'
+61,63c62
+< e(z) :- c(z).
+<   z='3'
+<   z='4'
+---
+> SCC: R3
+64a64
+>   z='4'
+70,76c70
+< d(y) :- e(y).
+<   z='3'
+< e(z) :- c(z).
+< c(x) :- d(x).
+< d(y) :- e(y).
+< e(z) :- c(z).
+< 3 passes: R3,R4,R5
+---
+> 1 passes: R3
+87c81,84
+< SCC: R0,R1
+---
+> SCC: R1
+> b(y) :- a(y).
+>   y='1'
+> SCC: R0
+97,101c94
+< b(y) :- a(y).
+<   y='1'
+< a(x) :- b(x).
+< b(y) :- a(y).
+< 2 passes: R0,R1
+---
+> 1 passes: R0
+140c133
+< e(z)? Yes(7)
+---
+> e(z)? Yes(6)
+142d134
+<   z='4'
+diff failed on test 81 \n
+Running input 82
+15,19c15
+< SCC: R3,R4,R5
+< c(x) :- d(x).
+<   z='4'
+< d(y) :- e(y).
+<   z='5'
+---
+> SCC: R5
+22,24c18
+<   z='4'
+< c(x) :- d(x).
+<   z='5'
+---
+> SCC: R4
+27c21,22
+< e(z) :- c(z).
+---
+>   z='5'
+> SCC: R3
+29,31c24,26
+< d(y) :- e(y).
+< e(z) :- c(z).
+< 3 passes: R3,R4,R5
+---
+>   z='4'
+>   z='5'
+> 1 passes: R3
+35d29
+<   z='4'
+38c32,39
+< SCC: R7,R8,R9,R10
+---
+> SCC: R9
+> h(z) :- i(z).
+>   z='9'
+> SCC: R8
+> g(y) :- h(y).
+>   z='8'
+>   z='9'
+> SCC: R7
+41d41
+< g(y) :- h(y).
+43d42
+< h(z) :- i(z).
+44a44
+> SCC: R10
+47d46
+<   z='4'
+51d49
+< f(x) :- g(x).
+53,54d50
+< g(y) :- h(y).
+<   z='9'
+57d52
+<   z='4'
+61,64d55
+< i(z) :- f(z).
+<   z='8'
+< f(x) :- g(x).
+<   z='9'
+67d57
+<   z='4'
+70,71d59
+< h(z) :- i(z).
+< i(z) :- f(z).
+73,74d60
+< g(y) :- h(y).
+< h(z) :- i(z).
+76c62
+< 4 passes: R7,R8,R9,R10
+---
+> 2 passes: R10
+83c69,72
+< SCC: R0,R1
+---
+> SCC: R1
+> b(y) :- a(y).
+>   y='1'
+> SCC: R0
+89,93c78
+< b(y) :- a(y).
+<   y='1'
+< a(x) :- b(x).
+< b(y) :- a(y).
+< 2 passes: R0,R1
+---
+> 1 passes: R0
+116c101
+< e(z)? Yes(3)
+---
+> e(z)? Yes(2)
+118d102
+<   z='4'
+120c104
+< f(z)? Yes(7)
+---
+> f(z)? Yes(6)
+122d105
+<   z='4'
+128c111
+< g(z)? Yes(7)
+---
+> g(z)? Yes(6)
+130d112
+<   z='4'
+136c118
+< h(z)? Yes(7)
+---
+> h(z)? Yes(6)
+138d119
+<   z='4'
+144c125
+< i(z)? Yes(7)
+---
+> i(z)? Yes(6)
+146d126
+<   z='4'
+diff failed on test 82 \n
+Running input 83
+17,19c17
+< SCC: R0,R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11,R12
+< a(x) :- b(x).
+<   x='2'
+---
+> SCC: R1
+22,23c20
+< b(y) :- c(y).
+<   y='3'
+---
+> SCC: R3
+27,30c24
+< c(x) :- d(x).
+<   z='4'
+< d(y) :- e(y).
+<   z='5'
+---
+> SCC: R6
+35,37c29
+<   z='4'
+< e(z) :- f(z).
+<   z='6'
+---
+> SCC: R8
+42d33
+<   z='4'
+44,49c35
+< f(x) :- g(x).
+<   z='7'
+< g(y) :- h(y).
+<   z='8'
+< h(z) :- i(z).
+<   z='9'
+---
+> SCC: R12
+54d39
+<   z='4'
+57,66c42,43
+<   z='7'
+< a(x) :- b(x).
+<   x='3'
+< b(y) :- a(y).
+< b(y) :- c(y).
+<   y='4'
+< c(y) :- b(y).
+< c(x) :- d(x).
+<   z='5'
+< d(y) :- e(y).
+---
+> SCC: R11
+> h(z) :- i(z).
+69a47
+>   z='5'
+71,77d48
+< e(z) :- c(z).
+< e(z) :- f(z).
+<   z='7'
+< f(z) :- e(z).
+< f(x) :- g(x).
+<   z='8'
+< g(y) :- h(y).
+79c50,51
+< h(z) :- i(z).
+---
+> SCC: R10
+> g(y) :- h(y).
+83d54
+<   z='4'
+85a57,60
+>   z='8'
+>   z='9'
+> SCC: R9
+> f(x) :- g(x).
+87d61
+< i(z) :- f(z).
+89,95c63,65
+< a(x) :- b(x).
+<   x='4'
+< b(y) :- a(y).
+< b(y) :- c(y).
+<   y='5'
+< c(y) :- b(y).
+< c(x) :- d(x).
+---
+>   z='9'
+> SCC: R7
+> e(z) :- f(z).
+97d66
+< d(y) :- e(y).
+99,100d67
+< e(z) :- c(z).
+< e(z) :- f(z).
+102,103d68
+< f(z) :- e(z).
+< f(x) :- g(x).
+105c70,71
+< g(y) :- h(y).
+---
+> SCC: R5
+> d(y) :- e(y).
+109d74
+<   z='4'
+112,120d76
+< h(z) :- i(z).
+< i(z) :- f(z).
+< a(x) :- b(x).
+<   x='5'
+< b(y) :- a(y).
+< b(y) :- c(y).
+<   y='6'
+< c(y) :- b(y).
+< c(x) :- d(x).
+122d77
+< d(y) :- e(y).
+124,125d78
+< e(z) :- c(z).
+< e(z) :- f(z).
+127,137c80
+< f(z) :- e(z).
+< f(x) :- g(x).
+< g(y) :- h(y).
+< h(z) :- i(z).
+< i(z) :- f(z).
+< a(x) :- b(x).
+<   x='6'
+< b(y) :- a(y).
+< b(y) :- c(y).
+<   y='7'
+< c(y) :- b(y).
+---
+> SCC: R4
+138a82,85
+>   z='4'
+>   z='5'
+>   z='6'
+>   z='7'
+140d86
+< d(y) :- e(y).
+142,151c88
+< e(z) :- c(z).
+< e(z) :- f(z).
+< f(z) :- e(z).
+< f(x) :- g(x).
+< g(y) :- h(y).
+< h(z) :- i(z).
+< i(z) :- f(z).
+< a(x) :- b(x).
+<   x='7'
+< b(y) :- a(y).
+---
+> SCC: R2
+152a90,94
+>   y='3'
+>   y='4'
+>   y='5'
+>   y='6'
+>   y='7'
+154,168d95
+< c(y) :- b(y).
+< c(x) :- d(x).
+<   z='9'
+< d(y) :- e(y).
+< e(z) :- c(z).
+< e(z) :- f(z).
+< f(z) :- e(z).
+< f(x) :- g(x).
+< g(y) :- h(y).
+< h(z) :- i(z).
+< i(z) :- f(z).
+< a(x) :- b(x).
+<   x='8'
+< b(y) :- a(y).
+< b(y) :- c(y).
+170,179c97
+< c(y) :- b(y).
+< c(x) :- d(x).
+< d(y) :- e(y).
+< e(z) :- c(z).
+< e(z) :- f(z).
+< f(z) :- e(z).
+< f(x) :- g(x).
+< g(y) :- h(y).
+< h(z) :- i(z).
+< i(z) :- f(z).
+---
+> SCC: R0
+180a99,105
+>   x='2'
+>   x='3'
+>   x='4'
+>   x='5'
+>   x='6'
+>   x='7'
+>   x='8'
+183d107
+< b(y) :- c(y).
+185,186d108
+< c(x) :- d(x).
+< d(y) :- e(y).
+188c110
+< e(z) :- f(z).
+---
+>   z='4'
+190,192c112
+< f(x) :- g(x).
+< g(y) :- h(y).
+< h(z) :- i(z).
+---
+>   z='4'
+193a114,126
+>   z='4'
+>   z='7'
+>   z='8'
+> h(z) :- i(z).
+>   z='4'
+>   z='7'
+> g(y) :- h(y).
+>   z='4'
+> f(x) :- g(x).
+> e(z) :- f(z).
+> d(y) :- e(y).
+> c(x) :- d(x).
+> b(y) :- c(y).
+196d128
+< b(y) :- c(y).
+198,199d129
+< c(x) :- d(x).
+< d(y) :- e(y).
+201d130
+< e(z) :- f(z).
+203,205d131
+< f(x) :- g(x).
+< g(y) :- h(y).
+< h(z) :- i(z).
+207c133,141
+< 9 passes: R0,R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11,R12
+---
+> h(z) :- i(z).
+> g(y) :- h(y).
+> f(x) :- g(x).
+> e(z) :- f(z).
+> d(y) :- e(y).
+> c(x) :- d(x).
+> b(y) :- c(y).
+> a(x) :- b(x).
+> 3 passes: R0
+diff failed on test 83 \n
+Running input 84
+13,22c13,14
+< SCC: R0,R1,R2,R3,R4,R5,R6,R7,R8
+< a(x) :- b(x).
+<   x='2'
+< b(y) :- a(y).
+<   y='1'
+< a(x) :- c(x).
+<   x='3'
+< c(y) :- d(y).
+<   z='4'
+< d(z) :- a(z).
+---
+> SCC: R8
+> g(z) :- a(z).
+24,25c16,25
+<   z='2'
+<   z='3'
+---
+> SCC: R7
+> f(z) :- g(z).
+>   z='1'
+>   z='7'
+> SCC: R6
+> e(y) :- f(y).
+>   z='1'
+>   z='6'
+>   z='7'
+> SCC: R5
+28c28,33
+< e(y) :- f(y).
+---
+>   x='6'
+>   x='7'
+> SCC: R4
+> d(z) :- a(z).
+>   z='1'
+>   z='5'
+30d34
+< f(z) :- g(z).
+32c36,37
+< g(z) :- a(z).
+---
+> SCC: R3
+> c(y) :- d(y).
+34,35c39
+<   z='2'
+<   z='3'
+---
+>   z='4'
+37c41,47
+< a(x) :- b(x).
+---
+>   z='6'
+>   z='7'
+> SCC: R2
+> a(x) :- c(x).
+>   x='3'
+>   x='4'
+> SCC: R1
+38a49
+>   y='1'
+39a51
+>   y='4'
+41,44c53,58
+< a(x) :- c(x).
+<   x='4'
+< c(y) :- d(y).
+<   z='1'
+---
+>   y='6'
+>   y='7'
+> SCC: R0
+> a(x) :- b(x).
+>   x='2'
+> g(z) :- a(z).
+46c60,61
+< d(z) :- a(z).
+---
+>   z='3'
+>   z='4'
+48,51c63
+< a(x) :- e(x).
+<   x='6'
+< e(y) :- f(y).
+<   z='7'
+---
+>   z='6'
+53d64
+<   z='1'
+56,57d66
+<   z='5'
+< g(z) :- a(z).
+59,65d67
+<   z='6'
+< a(x) :- b(x).
+< b(y) :- a(y).
+<   y='4'
+<   y='6'
+< a(x) :- c(x).
+< c(y) :- d(y).
+67,70d68
+< d(z) :- a(z).
+<   z='6'
+< a(x) :- e(x).
+<   x='7'
+72d69
+<   z='1'
+75d71
+< f(z) :- g(z).
+77,85d72
+< g(z) :- a(z).
+< a(x) :- b(x).
+< b(y) :- a(y).
+<   y='7'
+< a(x) :- c(x).
+< c(y) :- d(y).
+<   z='6'
+< d(z) :- a(z).
+<   z='7'
+87,95d73
+< e(y) :- f(y).
+<   z='4'
+< f(z) :- g(z).
+< g(z) :- a(z).
+< a(x) :- b(x).
+< b(y) :- a(y).
+< a(x) :- c(x).
+< c(y) :- d(y).
+<   z='7'
+97,103c75,76
+< a(x) :- e(x).
+< e(y) :- f(y).
+< f(z) :- g(z).
+< g(z) :- a(z).
+< a(x) :- b(x).
+< b(y) :- a(y).
+< a(x) :- c(x).
+---
+>   z='2'
+>   z='3'
+105,108c78,81
+< d(z) :- a(z).
+< a(x) :- e(x).
+< e(y) :- f(y).
+< f(z) :- g(z).
+---
+>   z='2'
+> a(x) :- c(x).
+> b(y) :- a(y).
+> a(x) :- b(x).
+110c83,91
+< 6 passes: R0,R1,R2,R3,R4,R5,R6,R7,R8
+---
+> f(z) :- g(z).
+> e(y) :- f(y).
+> a(x) :- e(x).
+> d(z) :- a(z).
+> c(y) :- d(y).
+> a(x) :- c(x).
+> b(y) :- a(y).
+> a(x) :- b(x).
+> 3 passes: R0
+diff failed on test 84 \n
+Running input 85
+15c15,27
+< SCC: R7,R8,R9,R10
+---
+> SCC: R10
+> i(z) :- f(z).
+>   z='6'
+> SCC: R9
+> h(z) :- i(z).
+>   z='6'
+>   z='9'
+> SCC: R8
+> g(y) :- h(y).
+>   z='6'
+>   z='8'
+>   z='9'
+> SCC: R7
+18d29
+< g(y) :- h(y).
+20d30
+< h(z) :- i(z).
+23d32
+<   z='6'
+25d33
+< f(x) :- g(x).
+27,28d34
+< g(y) :- h(y).
+<   z='9'
+30d35
+<   z='6'
+32,35d36
+< i(z) :- f(z).
+<   z='8'
+< f(x) :- g(x).
+<   z='9'
+37,39d37
+<   z='6'
+< h(z) :- i(z).
+< i(z) :- f(z).
+41,42d38
+< g(y) :- h(y).
+< h(z) :- i(z).
+44c40,43
+< 4 passes: R7,R8,R9,R10
+---
+> h(z) :- i(z).
+> g(y) :- h(y).
+> f(x) :- g(x).
+> 3 passes: R7
+52,54c51
+< SCC: R0,R1
+< a(x) :- b(x).
+<   x='2'
+---
+> SCC: R1
+56a54
+> SCC: R0
+58,59c56,57
+< b(y) :- a(y).
+< 2 passes: R0,R1
+---
+>   x='2'
+> 1 passes: R0
+65,67c63
+< SCC: R3,R4,R5
+< c(x) :- d(x).
+<   z='4'
+---
+> SCC: R4
+74,78c70
+< e(z) :- c(z).
+<   z='1'
+<   z='2'
+<   z='3'
+<   z='4'
+---
+> SCC: R3
+79a72
+>   z='4'
+85c78,79
+< d(y) :- e(y).
+---
+> SCC: R5
+> e(z) :- c(z).
+89,93c83,84
+< e(z) :- c(z).
+< c(x) :- d(x).
+< d(y) :- e(y).
+< e(z) :- c(z).
+< 3 passes: R3,R4,R5
+---
+>   z='4'
+> 1 passes: R5
+112,115c103
+< d(z)? Yes(9)
+<   z='1'
+<   z='2'
+<   z='3'
+---
+> d(z)? Yes(6)
+diff failed on test 85 \n
+Running input 86
+8,10c8
+< SCC: R0,R1,R2,R3
+< F(a,b) :- G(b,a),H(a,b).
+<   A='3', B='2'
+---
+> SCC: R1
+13,14c11
+<   A='2', B='3'
+< G(a,b) :- H(b,a),F(b,a).
+---
+> SCC: R3
+16,18c13
+<   A='2', B='3'
+< F(a,b) :- G(b,a),H(a,b).
+< F(a,b) :- F(b,a).
+---
+> SCC: R2
+20,21c15
+<   A='3', B='2'
+< H(a,b) :- F(b,a),G(a,b).
+---
+> SCC: R0
+23,26c17,18
+< F(a,b) :- F(b,a).
+< G(a,b) :- H(b,a),F(b,a).
+< H(a,b) :- F(b,a),G(a,b).
+< 3 passes: R0,R1,R2,R3
+---
+>   A='3', B='2'
+> 1 passes: R0
+29c21
+< F(a,b)? Yes(4)
+---
+> F(a,b)? Yes(3)
+32,35d23
+<   a='2', b='3'
+<   a='3', b='2'
+< G(a,b)? Yes(2)
+<   a='2', b='3'
+37c25
+< H(a,b)? Yes(2)
+---
+> G(a,b)? Yes(1)
+38a27
+> H(a,b)? Yes(1)
+diff failed on test 86 \n
+Bucket 100
+Running input 101
+Running input 102
+6,8c6
+< SCC: R0,R1
+< permutations(b,a,c,d) :- permutations(a,b,c,d).
+<   A='b', B='a', C='c', D='d'
+---
+> SCC: R1
+10d7
+<   A='a', B='c', C='d', D='b'
+11a9
+> SCC: R0
+13c11
+<   A='c', B='a', C='d', D='b'
+---
+>   A='b', B='a', C='c', D='d'
+16c14
+<   A='a', B='d', C='b', D='c'
+---
+>   A='a', B='c', C='d', D='b'
+19d16
+<   A='c', B='d', C='b', D='a'
+21c18
+<   A='d', B='a', C='b', D='c'
+---
+>   A='c', B='a', C='d', D='b'
+24d20
+<   A='d', B='c', C='b', D='a'
+25a22
+>   A='a', B='d', C='b', D='c'
+27c24,25
+<   A='c', B='b', C='a', D='d'
+---
+>   A='c', B='d', C='b', D='a'
+>   A='d', B='a', C='b', D='c'
+29d26
+<   A='d', B='b', C='c', D='a'
+33,34c30
+<   A='b', B='c', C='a', D='d'
+<   A='b', B='d', C='c', D='a'
+---
+>   A='d', B='c', C='b', D='a'
+37c33,34
+<   A='b', B='a', C='d', D='c'
+---
+>   A='c', B='b', C='a', D='d'
+>   A='d', B='b', C='c', D='a'
+38a36,38
+>   A='b', B='a', C='d', D='c'
+>   A='b', B='c', C='a', D='d'
+>   A='b', B='d', C='c', D='a'
+40c40,41
+< 5 passes: R0,R1
+---
+> permutations(b,a,c,d) :- permutations(a,b,c,d).
+> 5 passes: R0
+diff failed on test 102 \n
+Running input 103
+Running input 104
+19,20c19
+< marriedTo(X,Y) :- marriedTo(Y,X).
+< 2 passes: R0
+---
+> 1 passes: R0
+35,36c34
+< childOf(X,Y) :- childOf(X,Z),marriedTo(Y,Z).
+< 2 passes: R1
+---
+> 1 passes: R1
+90,104c88
+< descendantOf(X,Y) :- childOf(X,Z),descendantOf(Z,Y).
+<   A='Anna', B='Bea'
+<   A='Anna', B='Zed'
+<   A='Bill', B='Bea'
+<   A='Bill', B='Zed'
+<   A='Lou', B='Bea'
+<   A='Lou', B='Zed'
+<   A='Mary', B='Bea'
+<   A='Mary', B='Zed'
+<   A='Ron', B='Bea'
+<   A='Ron', B='Zed'
+<   A='Tom', B='Bea'
+<   A='Tom', B='Zed'
+< descendantOf(X,Y) :- childOf(X,Z),descendantOf(Z,Y).
+< 3 passes: R4
+---
+> 1 passes: R4
+108,109d91
+<   A='Anna', B='Anne'
+<   A='Anna', B='Bill'
+111,114d92
+<   A='Anna', B='Jill'
+<   A='Anna', B='Lou'
+<   A='Anna', B='Mary'
+<   A='Anna', B='Ned'
+117,120d94
+<   A='Anna', B='Sue'
+<   A='Anna', B='Tim'
+<   A='Anna', B='Tom'
+<   A='Anne', B='Anna'
+128d101
+<   A='Anne', B='Ron'
+133d105
+<   A='Bill', B='Anna'
+136,137d107
+<   A='Bill', B='Dan'
+<   A='Bill', B='Jill'
+140,142d109
+<   A='Bill', B='Ned'
+<   A='Bill', B='Ron'
+<   A='Bill', B='Stan'
+148d114
+<   A='Dan', B='Bill'
+151,152d116
+<   A='Dan', B='Lou'
+<   A='Dan', B='Mary'
+158,159d121
+<   A='Dan', B='Tom'
+<   A='Jill', B='Anna'
+161d122
+<   A='Jill', B='Bill'
+164,165d124
+<   A='Jill', B='Lou'
+<   A='Jill', B='Mary'
+167d125
+<   A='Jill', B='Ron'
+171,172d128
+<   A='Jill', B='Tom'
+<   A='Lou', B='Anna'
+175,176d130
+<   A='Lou', B='Dan'
+<   A='Lou', B='Jill'
+179,181d132
+<   A='Lou', B='Ned'
+<   A='Lou', B='Ron'
+<   A='Lou', B='Stan'
+185d135
+<   A='Mary', B='Anna'
+188,189d137
+<   A='Mary', B='Dan'
+<   A='Mary', B='Jill'
+192,194d139
+<   A='Mary', B='Ned'
+<   A='Mary', B='Ron'
+<   A='Mary', B='Stan'
+198d142
+<   A='Ned', B='Anna'
+200d143
+<   A='Ned', B='Bill'
+203,204d145
+<   A='Ned', B='Lou'
+<   A='Ned', B='Mary'
+206d146
+<   A='Ned', B='Ron'
+210d149
+<   A='Ned', B='Tom'
+212,213d150
+<   A='Ron', B='Anne'
+<   A='Ron', B='Bill'
+215,218d151
+<   A='Ron', B='Jill'
+<   A='Ron', B='Lou'
+<   A='Ron', B='Mary'
+<   A='Ron', B='Ned'
+221,223d153
+<   A='Ron', B='Sue'
+<   A='Ron', B='Tim'
+<   A='Ron', B='Tom'
+226d155
+<   A='Stan', B='Bill'
+229,230d157
+<   A='Stan', B='Lou'
+<   A='Stan', B='Mary'
+236,237d162
+<   A='Stan', B='Tom'
+<   A='Sue', B='Anna'
+245d169
+<   A='Sue', B='Ron'
+250d173
+<   A='Tim', B='Anna'
+258d180
+<   A='Tim', B='Ron'
+263d184
+<   A='Tom', B='Anna'
+266,267d186
+<   A='Tom', B='Dan'
+<   A='Tom', B='Jill'
+270,272d188
+<   A='Tom', B='Ned'
+<   A='Tom', B='Ron'
+<   A='Tom', B='Stan'
+281d196
+<   A='Bea', B='Anna'
+283d197
+<   A='Bea', B='Bill'
+286,287d199
+<   A='Bea', B='Lou'
+<   A='Bea', B='Mary'
+289d200
+<   A='Bea', B='Ron'
+293d203
+<   A='Bea', B='Tom'
+326d235
+<   A='Zed', B='Anna'
+328d236
+<   A='Zed', B='Bill'
+331,332d238
+<   A='Zed', B='Lou'
+<   A='Zed', B='Mary'
+334d239
+<   A='Zed', B='Ron'
+338d242
+<   A='Zed', B='Tom'
+382c286
+< descendantOf('Lou','Zed')? Yes(1)
+---
+> descendantOf('Lou','Zed')? No
+384,385c288
+< descendantOf('Lou',X)? Yes(6)
+<   X='Bea'
+---
+> descendantOf('Lou',X)? Yes(4)
+390d292
+<   X='Zed'
+392,394c294,295
+< ancestorOf('Bea','Tom')? Yes(1)
+< ancestorOf('Bea',X)? Yes(13)
+<   X='Anna'
+---
+> ancestorOf('Bea','Tom')? No
+> ancestorOf('Bea',X)? Yes(7)
+396d296
+<   X='Bill'
+399,400d298
+<   X='Lou'
+<   X='Mary'
+402d299
+<   X='Ron'
+406d302
+<   X='Tom'
+409c305
+< relativeOf('Mary','Anna')? Yes(1)
+---
+> relativeOf('Mary','Anna')? No
+447,448c343
+< descendantOf(Y,X)? Yes(60)
+<   Y='Anna', X='Bea'
+---
+> descendantOf(Y,X)? Yes(48)
+453d347
+<   Y='Anna', X='Zed'
+459d352
+<   Y='Bill', X='Bea'
+463d355
+<   Y='Bill', X='Zed'
+470d361
+<   Y='Lou', X='Bea'
+475,476d365
+<   Y='Lou', X='Zed'
+<   Y='Mary', X='Bea'
+481d369
+<   Y='Mary', X='Zed'
+484d371
+<   Y='Ron', X='Bea'
+489d375
+<   Y='Ron', X='Zed'
+503d388
+<   Y='Tom', X='Bea'
+507,508c392
+<   Y='Tom', X='Zed'
+< ancestorOf(Y,X)? Yes(60)
+---
+> ancestorOf(Y,X)? Yes(48)
+511d394
+<   Y='Bea', X='Anna'
+513d395
+<   Y='Bea', X='Bill'
+516,517d397
+<   Y='Bea', X='Lou'
+<   Y='Bea', X='Mary'
+519d398
+<   Y='Bea', X='Ron'
+523d401
+<   Y='Bea', X='Tom'
+556d433
+<   Y='Zed', X='Anna'
+558d434
+<   Y='Zed', X='Bill'
+561,562d436
+<   Y='Zed', X='Lou'
+<   Y='Zed', X='Mary'
+564d437
+<   Y='Zed', X='Ron'
+568,569c441
+<   Y='Zed', X='Tom'
+< relativeOf(Y,X)? Yes(169)
+---
+> relativeOf(Y,X)? Yes(101)
+571,572d442
+<   Y='Anna', X='Anne'
+<   Y='Anna', X='Bill'
+574,577d443
+<   Y='Anna', X='Jill'
+<   Y='Anna', X='Lou'
+<   Y='Anna', X='Mary'
+<   Y='Anna', X='Ned'
+580,583d445
+<   Y='Anna', X='Sue'
+<   Y='Anna', X='Tim'
+<   Y='Anna', X='Tom'
+<   Y='Anne', X='Anna'
+591d452
+<   Y='Anne', X='Ron'
+596d456
+<   Y='Bill', X='Anna'
+599,600d458
+<   Y='Bill', X='Dan'
+<   Y='Bill', X='Jill'
+603,605d460
+<   Y='Bill', X='Ned'
+<   Y='Bill', X='Ron'
+<   Y='Bill', X='Stan'
+611d465
+<   Y='Dan', X='Bill'
+614,615d467
+<   Y='Dan', X='Lou'
+<   Y='Dan', X='Mary'
+621,622d472
+<   Y='Dan', X='Tom'
+<   Y='Jill', X='Anna'
+624d473
+<   Y='Jill', X='Bill'
+627,628d475
+<   Y='Jill', X='Lou'
+<   Y='Jill', X='Mary'
+630d476
+<   Y='Jill', X='Ron'
+634,635d479
+<   Y='Jill', X='Tom'
+<   Y='Lou', X='Anna'
+638,639d481
+<   Y='Lou', X='Dan'
+<   Y='Lou', X='Jill'
+642,644d483
+<   Y='Lou', X='Ned'
+<   Y='Lou', X='Ron'
+<   Y='Lou', X='Stan'
+648d486
+<   Y='Mary', X='Anna'
+651,652d488
+<   Y='Mary', X='Dan'
+<   Y='Mary', X='Jill'
+655,657d490
+<   Y='Mary', X='Ned'
+<   Y='Mary', X='Ron'
+<   Y='Mary', X='Stan'
+661d493
+<   Y='Ned', X='Anna'
+663d494
+<   Y='Ned', X='Bill'
+666,667d496
+<   Y='Ned', X='Lou'
+<   Y='Ned', X='Mary'
+669d497
+<   Y='Ned', X='Ron'
+673d500
+<   Y='Ned', X='Tom'
+675,676d501
+<   Y='Ron', X='Anne'
+<   Y='Ron', X='Bill'
+678,681d502
+<   Y='Ron', X='Jill'
+<   Y='Ron', X='Lou'
+<   Y='Ron', X='Mary'
+<   Y='Ron', X='Ned'
+684,686d504
+<   Y='Ron', X='Sue'
+<   Y='Ron', X='Tim'
+<   Y='Ron', X='Tom'
+689d506
+<   Y='Stan', X='Bill'
+692,693d508
+<   Y='Stan', X='Lou'
+<   Y='Stan', X='Mary'
+699,700d513
+<   Y='Stan', X='Tom'
+<   Y='Sue', X='Anna'
+708d520
+<   Y='Sue', X='Ron'
+713d524
+<   Y='Tim', X='Anna'
+721d531
+<   Y='Tim', X='Ron'
+726d535
+<   Y='Tom', X='Anna'
+729,730d537
+<   Y='Tom', X='Dan'
+<   Y='Tom', X='Jill'
+733,735d539
+<   Y='Tom', X='Ned'
+<   Y='Tom', X='Ron'
+<   Y='Tom', X='Stan'
+diff failed on test 104 \n
+Running input 105
+112,116c112
+< before(C1,C2) :- cp(C3,C1),before(C3,C2).
+<   cc1='CS100', cc2='CS121'
+<   cc1='CS100', cc2='CS206'
+< before(C1,C2) :- cp(C3,C1),before(C3,C2).
+< 3 passes: R1
+---
+> 1 passes: R1
+diff failed on test 105 \n
+Running input 108
+25c25,35
+< SCC: R6,R7
+---
+> SCC: R7
+> SymTran(X,Z) :- SymTran(X,Y),SymTran(Y,Z).
+>   a='10', b='8'
+>   a='3', b='1'
+>   a='4', b='2'
+>   a='5', b='3'
+>   a='6', b='4'
+>   a='7', b='5'
+>   a='8', b='6'
+>   a='9', b='7'
+> SCC: R6
+27a38
+>   a='1', b='3'
+28a40
+>   a='2', b='4'
+29a42
+>   a='3', b='5'
+30a44
+>   a='4', b='6'
+31a46
+>   a='5', b='7'
+32a48
+>   a='6', b='8'
+33a50,51
+>   a='7', b='9'
+>   a='8', b='10'
+38,64d55
+<   a='1', b='3'
+<   a='10', b='10'
+<   a='10', b='8'
+<   a='2', b='2'
+<   a='2', b='4'
+<   a='3', b='1'
+<   a='3', b='3'
+<   a='3', b='5'
+<   a='4', b='2'
+<   a='4', b='4'
+<   a='4', b='6'
+<   a='5', b='3'
+<   a='5', b='5'
+<   a='5', b='7'
+<   a='6', b='4'
+<   a='6', b='6'
+<   a='6', b='8'
+<   a='7', b='5'
+<   a='7', b='7'
+<   a='7', b='9'
+<   a='8', b='10'
+<   a='8', b='6'
+<   a='8', b='8'
+<   a='9', b='7'
+<   a='9', b='9'
+< SymTran(X,Y) :- SymTran(Y,X).
+< SymTran(X,Z) :- SymTran(X,Y),SymTran(Y,Z).
+66a58
+>   a='10', b='10'
+68a61
+>   a='2', b='2'
+70a64
+>   a='3', b='3'
+73a68
+>   a='4', b='4'
+77a73
+>   a='5', b='5'
+82a79
+>   a='6', b='6'
+86a84
+>   a='7', b='7'
+88a87
+>   a='8', b='8'
+90a90
+>   a='9', b='9'
+127c127,128
+< 5 passes: R6,R7
+---
+> SymTran(X,Y) :- SymTran(Y,X).
+> 5 passes: R6
+150,182c151
+< Transitive(X,Z) :- Transitive(X,Y),Transitive(Y,Z).
+<   a='1', b='4'
+<   a='1', b='5'
+<   a='2', b='5'
+<   a='2', b='6'
+<   a='3', b='6'
+<   a='3', b='7'
+<   a='4', b='7'
+<   a='4', b='8'
+<   a='5', b='8'
+<   a='5', b='9'
+<   a='6', b='10'
+<   a='6', b='9'
+<   a='7', b='10'
+< Transitive(X,Z) :- Transitive(X,Y),Transitive(Y,Z).
+<   a='1', b='6'
+<   a='1', b='7'
+<   a='1', b='8'
+<   a='1', b='9'
+<   a='2', b='10'
+<   a='2', b='7'
+<   a='2', b='8'
+<   a='2', b='9'
+<   a='3', b='10'
+<   a='3', b='8'
+<   a='3', b='9'
+<   a='4', b='10'
+<   a='4', b='9'
+<   a='5', b='10'
+< Transitive(X,Z) :- Transitive(X,Y),Transitive(Y,Z).
+<   a='1', b='10'
+< Transitive(X,Z) :- Transitive(X,Y),Transitive(Y,Z).
+< 5 passes: R5
+---
+> 1 passes: R5
+230,231c199
+< Symmetric(X,Y) :- Symmetric(Y,X).
+< 2 passes: R1
+---
+> 1 passes: R1
+263,264c231
+< Transitive('1',P)? Yes(9)
+<   P='10'
+---
+> Transitive('1',P)? Yes(2)
+267,272d233
+<   P='4'
+<   P='5'
+<   P='6'
+<   P='7'
+<   P='8'
+<   P='9'
+diff failed on test 108 \n
